@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Downloads</title>
+	<link rel="stylesheet" href="photon-colors.css">
+	<link rel="stylesheet" href="defaults.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<svg style="display: none">
+		<defs>
+			<g id="file">
+				<rect x="1" y="4" width="14" height="10" rx="1" ry="1" fill="context-fill"></rect>
+				<path d="M6 1H3a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2zm7 0h-3a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2z" fill="context-fill"></path>
+			</g>
+			<g id="delete">
+				<title>Remove from history</title>
+				<path fill="context-fill" d="M6.5 12a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 0 .5.5zm2 0a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 0 .5.5zm2 0a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 0 .5.5z"></path>
+				<path fill="context-fill" d="M14 2h-3.05a2.5 2.5 0 0 0-4.9 0H3a1 1 0 0 0 0 2v9a3 3 0 0 0 3 3h5a3 3 0 0 0 3-3V4a1 1 0 0 0 0-2zM8.5 1a1.489 1.489 0 0 1 1.391 1H7.109A1.489 1.489 0 0 1 8.5 1zM12 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4h7z"></path>
+			</g>
+			<g id="folder">
+				<title>Open containing folder</title>
+				<path fill="context-fill" d="M14 3H8.151L6.584 1.538A2 2 0 0 0 5.219 1H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM5.219 3l1.072 1H2V3zM14 13H2V5h6v-.014c.05 0 .1.014.151.014H14z"></path>
+			</g>
+		</defs>
+	</svg>
+	<div class="topbar">
+		<input type="text" placeholder="Search downloads" class="topbar__search">
+		<button>Clear downloads</button>
+	</div>
+	<ul class="main">
+		<li class="item">
+			<div class="item__icon"><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#file"></use></svg></div>
+			<div class="item__desc">
+				<div class="item__desc__title"><a>Search.svg</a> <span class="item__desc__status item__desc__status--success">470 bytes</span></div>
+				<div class="item__desc__metadata"><a href="https://google.com.ar/">blob resource</a> -- 4:30PM</div>
+			</div>
+			<div class="item__action"><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#delete"></use></svg><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#folder"></use></svg></div>
+		</li>
+		<li class="item">
+			<div class="item__icon"> <svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#file"></use></svg></div>
+			<div class="item__desc">
+				<div class="item__desc__title"><a>extension.css</a> <span class="item__desc__status item__desc__status--warning">File moved or missing</span></div>
+				<div class="item__desc__metadata"><a href="https://google.com.ar/">github.com</a>-- 4:15 PM</div>
+			</div>
+			<div class="item__action"><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#delete"></use></svg><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#folder"></use></svg></div>
+		</li>
+		<li class="item">
+			<div class="item__icon"> <svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#file"></use></svg></div>
+			<div class="item__desc">
+				<div class="item__desc__title"><a>photon-colors.css</a> <span class="item__desc__status item__desc__status--error">Failed</span></div>
+				<div class="item__desc__metadata"><a href="https://google.com.ar/">firefox.com</a> -- 3:54 PM</div>
+			</div>
+			<div class="item__action"><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#delete"></use></svg><svg width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#folder"></use></svg></div>
+		</li>
+	</ul>
+</body>
+</html>

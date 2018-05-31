@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	background: var(--grey-10);
+}
+
+.topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 32px auto 0 auto;
+	max-width: 1200px;
+}
+
+.topbar__search {
+	background: url("search.svg") no-repeat 8px 8px;
+	background-size: 16px 16px;
+	padding: 8px;
+	padding-left: 32px;
+	width: 50%;
+}
+
+.main {
+	margin: 0 auto;
+	margin-top: 16px;
+	list-style: none;
+	padding: 0;
+	max-width: 1200px;
+	border: 1px solid var(--grey-30);
+	border-bottom: none;
+	box-shadow: 0 1px 4px rgba(12, 12, 13, 0.1);
+}
+
+.item {
+	border-bottom: 1px solid var(--grey-30);
+	padding: 16px;
+	background: var(--white-100);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.item__desc {
+	flex: 1;
+	padding: 0 16px;
+}
+
+.item__desc__title {
+	margin-bottom: 4px;
+}
+
+.item__desc__metadata {
+	color: var(--grey-50);
+}
+
+.item__action svg {
+	display: inline-block;
+	margin: 0 8px;
+	cursor: pointer;
+}
+
+.item__desc__status {
+	padding: 0 4px;
+}
+
+.item__desc__status--warning {
+	background: var(--yellow-50);
+	color: var(--yellow-80);
+}
+
+.item__desc__status--error {
+	background: var(--red-50);
+	color: var(--white-100);
+}
+
+.item__desc__status--success {
+	background: var(--green-50);
+	color: var(--green-90);
+}
