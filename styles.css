@@ -60,6 +60,7 @@ body {
 
 .item__desc__status {
 	padding: 0 4px;
+	margin-left: 4px;
 }
 
 .item__desc__status--warning {

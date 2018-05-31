@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Photon downloads",
+	"version": "1.0",
+	"description": "Redesign download library with photon styles",
+	"background": {
+		"scripts": ["background-script.js"]
+	},
+	"browser_action": {
+		"default_title" : "Descargas"
+	},
+	"permissions" : [
+		"downloads"
+	]
+}
